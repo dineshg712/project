@@ -94,7 +94,6 @@ header {
     font: 16px/26px D-DIN-Bold, Arial, Verdana, sans-serif;
     font-weight: 400;
     padding: 10px 25px;
-    border-radius: 50px;
     transition: 0.2s;
     margin: 0 5px;
 }
@@ -206,7 +205,7 @@ header {
         transition: 0.3s;
     }
 
-    nav a:hover, .nav-bar ul li a:hover {
+    nav a:hover, .nav-bar ul li a:hover ,a.active {
         color: #7e7e7e;
     }
 

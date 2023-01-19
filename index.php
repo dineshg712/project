@@ -11,7 +11,6 @@
     <?php
         include_once("header.php");
     ?>
-    sfdhvs
     <div class="container">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui perferendis tempore architecto ex deleniti consectetur! Consectetur, veniam placeat. Aperiam quibusdam vel earum sit numquam sed minima architecto dolor aspernatur itaque.
         Dolores ratione quae dicta rerum sunt repellendus? Ea consequatur quaerat magni possimus harum et velit voluptatem sapiente repellat, vero debitis obcaecati minus, necessitatibus, doloribus quia qui amet cum ratione asperiores.
