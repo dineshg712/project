@@ -1,3 +1,10 @@
+const preloader = document.querySelector('#preloader')
+if (preloader) {
+  window.addEventListener('load', () => {
+    preloader.remove()
+  })
+}
+
 navBar = document.getElementById('nav-bar')
 document.onclick = function (clickEvent) {
   var clickover = clickEvent.target
@@ -7,6 +14,7 @@ document.onclick = function (clickEvent) {
     document.body.style.backgroundColor = '#fefefe'
   }
 }
+
 navbarlink = document.getElementById('nav-link')
 navbaractive = navbarlink.querySelectorAll('#nav-link a')
 for (var i = 0; i < navbaractive.length; i++) {
@@ -18,6 +26,7 @@ for (var i = 0; i < navbaractive.length; i++) {
     this.className += 'active'
   })
 }
+
 hamburger = document.getElementById('hamburger')
 hamburger.onclick = function () {
   navBar.classList.add('active')
@@ -26,6 +35,7 @@ hamburger.onclick = function () {
     navbaractive[i].classList.remove('active')
   }
 }
+
 function closeNav () {
   navBar.classList.remove('active')
   document.body.style.backgroundColor = '#fefefe'
