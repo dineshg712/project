@@ -35,7 +35,6 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: D-DIN-Light, Arial, Verdana, sans-serif;
     box-sizing: border-box
 }
 
@@ -52,7 +51,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
     margin: 0;
-    font-family:D-DIN-Bold,Arial,Verdana,sans-serif;
+    font-family:D-DIN-Light,Arial,Verdana,sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
