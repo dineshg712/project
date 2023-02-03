@@ -8,9 +8,9 @@ if (preloader) {
 navBar = document.getElementById('nav-bar')
 document.onclick = function (clickEvent) {
   var clickover = clickEvent.target
-  if (!document.getElementById('nav-bar').contains(clickover) && clickover.id != "hamburger") {
-  //if (clickover.id != 'hamburger') {
-    navBar.classList.remove('active')
+  //if (!document.getElementById('nav-bar').contains(clickover) && clickover.id != "hamburger") {
+  if (clickover.id != 'hamburger' && clickover.id != 'dropdown-link') {
+    navBar.classList.remove('nav-active')
     document.body.style.backgroundColor = '#fefefe'
   }
 }
@@ -23,13 +23,15 @@ for (var i = 0; i < navbaractive.length; i++) {
     if (current.length > 0) {
       current[0].className = current[0].className.replace('active', '')
     }
+    if(!navBar.classList.contains('nav-active')) {
     this.classList.toggle('active');
+    }
   })
 }
 
 hamburger = document.getElementById('hamburger')
 hamburger.onclick = function () {
-  navBar.classList.add('active')
+  navBar.classList.add('nav-active')
   document.body.style.backgroundColor = 'rgba(0,0,0,0.4)'
   for (var i = 0; i < navbaractive.length; i++) {
     navbaractive[i].classList.remove('active')
@@ -37,6 +39,16 @@ hamburger.onclick = function () {
 }
 
 function closeNav () {
-  navBar.classList.remove('active')
+  navBar.classList.remove('nav-active')
   document.body.style.backgroundColor = '#fefefe'
 }
+
+const navDropdowns = document.querySelectorAll('.nav-bar .dropdown > a');
+  navDropdowns.forEach(el => {
+      el.addEventListener('click', function(event) {
+          if (document.querySelector('.nav-bar.nav-active')) {
+              event.preventDefault();
+              this.nextElementSibling.classList.toggle('dropdown-active');
+          }
+      })
+  });
