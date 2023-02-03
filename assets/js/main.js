@@ -8,8 +8,8 @@ if (preloader) {
 navBar = document.getElementById('nav-bar')
 document.onclick = function (clickEvent) {
   var clickover = clickEvent.target
-  // if (!document.getElementById('nav-bar').contains(clickover) && clickover.id != "hamburger") {
-  if (clickover.id != 'hamburger') {
+  if (!document.getElementById('nav-bar').contains(clickover) && clickover.id != "hamburger") {
+  //if (clickover.id != 'hamburger') {
     navBar.classList.remove('active')
     document.body.style.backgroundColor = '#fefefe'
   }
@@ -23,7 +23,7 @@ for (var i = 0; i < navbaractive.length; i++) {
     if (current.length > 0) {
       current[0].className = current[0].className.replace('active', '')
     }
-    this.className += 'active'
+    this.classList.toggle('active');
   })
 }
 

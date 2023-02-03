@@ -10,7 +10,7 @@
                 <li><a href="#">Points Table</a></li>
                 <li><a href="#">News</a></li>
                 <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="admin/login.php">Login</a></li>
             </ul>
         </nav>
     </header>
