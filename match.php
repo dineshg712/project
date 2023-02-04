@@ -1,0 +1,12 @@
+<div class="col-6">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt quibusdam architecto officia aperiam unde similique distinctio placeat iusto voluptatibus. Minima nulla quia fugit nobis alias illum, voluptates tenetur corporis inventore!
+    Quis deserunt dolorem voluptatibus modi omnis voluptates dolore corrupti harum non beatae, provident voluptate at vel et laboriosam nulla iusto soluta voluptas maxime rerum iste ipsa hic. Nostrum, perferendis voluptates.
+    Est molestias odit mollitia fugiat veniam quibusdam delectus, sequi recusandae eius cum architecto velit voluptate placeat, ab at autem? Totam mollitia sapiente quaerat, illo aliquid perspiciatis. Doloribus eum ad in!
+    Consequuntur deleniti itaque veniam cupiditate, cum asperiores tenetur magni, voluptatum culpa quos vel autem? Consequatur, soluta! Magnam sit atque aliquid blanditiis quod tempora iure quos voluptatibus! Quidem nemo dicta molestiae.
+    Eum delectus quia iusto culpa fuga a nesciunt sequi, cum molestias! Reiciendis quod enim iste, aliquam incidunt esse minus commodi ullam, ipsa earum nulla vitae ad assumenda voluptas! Itaque, esse!
+    Minima impedit, molestias dicta nisi quibusdam tempore qui a dolor blanditiis sapiente mollitia molestiae libero illo officia doloribus. Similique, molestiae! Eum rerum non id tempora assumenda illum at incidunt alias.
+    Adipisci quia corporis nisi nemo est, ad quisquam, eaque ut maiores cumque, veniam sed obcaecati numquam. Nisi ipsum sapiente, dolores esse nemo voluptatibus, eveniet laboriosam quo alias quasi ducimus pariatur?
+    Iure culpa voluptatum dignissimos ex deleniti deserunt facere perferendis ratione fugit dolor, a temporibus recusandae, excepturi saepe nulla sequi. Earum fugit veritatis odit ad vel dolores hic, accusantium molestias delectus.
+    Impedit aliquam dolorem repudiandae quam libero. Id quos, nisi quisquam ipsa distinctio incidunt a quibusdam voluptatem ad iusto saepe dolor nulla at odit vel cupiditate, voluptatibus commodi fuga illum provident.
+    Provident ab quidem voluptatum tempore deleniti ut assumenda nulla architecto, officia, dolor iusto, optio minima autem! Ex tempore pariatur magnam, ea odio iusto sed, laborum assumenda qui, vero provident vitae?
+</div>

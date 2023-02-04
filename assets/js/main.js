@@ -5,6 +5,8 @@ if (preloader) {
   })
 }
 
+const redirect = pageurl => setTimeout(() => $('#load-content').load(pageurl + '.php') ,5)
+
 navBar = document.getElementById('nav-bar')
 document.onclick = function (clickEvent) {
   var clickover = clickEvent.target
