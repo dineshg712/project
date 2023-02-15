@@ -1,6 +1,7 @@
 <?php
 include 'config.php';
 session_start();
+error_reporting(0);
 if (isset($_SESSION['username'])) {
     header("Location: index.php");
 }
@@ -45,11 +46,11 @@ if (isset($_POST['submit'])) {
                         <form action="" method="POST">
                             <h2 class="mb-4">Login</h2>
                             <div class="input-group">
-                                <input type="text" class="input" name="uname" autocomplete="off" required>
+                                <input type="text" class="input" name="uname" value="<?php echo $uname; ?>" autocomplete="off" required>
                                 <label class="user-label">Username</label>
                             </div>
                             <div class="input-group">
-                                <input type="password" class="input" name="pass" autocomplete="off" required>
+                                <input type="password" class="input" name="pass" value="<?php echo $pass ?>" autocomplete="off" required>
                                 <label class="user-label">Password</label>
                             </div>
                             <button name="submit">Submit</button>

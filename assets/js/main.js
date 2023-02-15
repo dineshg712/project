@@ -13,7 +13,7 @@ document.onclick = function (clickEvent) {
   //if (!document.getElementById('nav-bar').contains(clickover) && clickover.id != "hamburger") {
   if (clickover.id != 'hamburger' && clickover.id != 'dropdown-link') {
     navBar.classList.remove('nav-active')
-    document.body.style.backgroundColor = '#e1e1e1'
+    document.body.style.backgroundColor = '#d1d1d1'
   }
 }
 
@@ -42,7 +42,7 @@ hamburger.onclick = function () {
 
 function closeNav () {
   navBar.classList.remove('nav-active')
-  document.body.style.backgroundColor = '#e1e1e1'
+  document.body.style.backgroundColor = '#d1d1d1'
 }
 
 const navDropdowns = document.querySelectorAll('.nav-bar .dropdown > a');
