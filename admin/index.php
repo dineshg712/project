@@ -1,5 +1,7 @@
 <?php
     session_start();
+    error_reporting(0);
+    include_once('config.php');
     if (!isset($_SESSION['username'])) {
         header("Location: login.php");
     }
@@ -34,12 +36,20 @@
     ?>
     <div class="container">
         <?php
-            include_once("createtournament.php");
+            include('createtournament.php');
         ?>
+        <div id="load-content"></div>
     </div>
     <?php
         include_once("footer.php");
     ?>
+    <!-- <script>
+        document.body.onload = function() {
+            $("#load-content").load('dashboard.php');
+        }
+    </script> -->
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>

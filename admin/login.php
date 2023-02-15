@@ -53,7 +53,7 @@ if (isset($_POST['submit'])) {
                                 <input type="password" class="input" name="pass" value="<?php echo $pass ?>" autocomplete="off" required>
                                 <label class="user-label">Password</label>
                             </div>
-                            <button name="submit">Submit</button>
+                            <button class="login-btn" name="submit">Submit</button>
                         </form>
                     </div>
                 </div>
