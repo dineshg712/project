@@ -10,7 +10,7 @@
                 <li><a href="#">Points Table</a></li>
                 <li><a href="#" onclick="redirect('news');">News</a></li>
                 <li><a href="#footer">Contact Us</a></li>
-                <li><a href="admin/login.php">Login</a></li>
+                <li><a href="admin/">Login</a></li>
             </ul>
         </nav>
     </header>

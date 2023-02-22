@@ -20,7 +20,7 @@
     <style>
         .card {
             background-color: #fff;
-            z-index: -1;
+            /* z-index: -1; */
             box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
             /* border-radius: 20px */
         }
@@ -30,13 +30,14 @@
     </style>
 </head>
 <body>
-    <div id="preloader"></div>
+    <!-- <div id="preloader"></div> -->
     <?php
         include_once("header.php");
     ?>
     <div class="container">
         <?php
-            include('createtournament.php');
+            // include('createtournament.php');
+            include('createteam.php');
         ?>
         <div id="load-content"></div>
     </div>
