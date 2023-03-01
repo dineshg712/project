@@ -24,7 +24,7 @@
                 <li><a href="#">Result</a></li>
                 <li><a href="#">Report</a></li>
                 <li><a href="#">News</a></li>
-                <li class="dropdown"><a href="#" id="dropdown-link"><span>admin</span><i id="dropdown-link" class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <li class="dropdown"><a href="#" id="dropdown-link"><span><?php echo $_SESSION['username']; ?></span><i id="dropdown-link" class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
                     <li><a href="#">Change Password</a></li>
                     <li><a href="logout.php">Logout</a></li>

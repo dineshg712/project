@@ -27,6 +27,9 @@
         button {
             height: 40px;
         }
+        .table> :not(caption)>*>* {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -36,8 +39,9 @@
     ?>
     <div class="container">
         <?php
-            // include('createtournament.php');
-            include('createteam.php');
+            // include('addtournament.php');
+            // include('addteam.php');
+            include('addplayer.php');
         ?>
         <div id="load-content"></div>
     </div>

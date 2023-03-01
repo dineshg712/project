@@ -8,7 +8,7 @@ if (isset($_SESSION['username'])) {
 if (isset($_POST['submit'])) {
     $uname = $_POST['uname'];
     $pass = md5($_POST['pass']);
-    $sql = "SELECT * FROM `admin` WHERE `username`='$uname' AND `password`='$pass'";
+    $sql = "SELECT * FROM `admin` WHERE BINARY `username`= BINARY '$uname' AND `password`= '$pass'";
     $result = mysqli_query($conn, $sql);
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
                                 <label class="user-label">Username</label>
                             </div>
                             <div class="input-group">
-                                <input type="password" class="input" name="pass" value="<?php echo $pass ?>" autocomplete="off" required>
+                                <input type="password" class="input" name="pass" value="<?php echo $_POST['pass'] ?>" autocomplete="off" required>
                                 <label class="user-label">Password</label>
                             </div>
                             <button class="login-btn" name="submit">Submit</button>

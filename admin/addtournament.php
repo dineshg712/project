@@ -26,7 +26,7 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
 <div class="row mt-3">
     <div class="flex-wrap">
         <div class="col-12">
-            <button type="button" class="login-btn float-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="width:200px;">Create Tournament</button>
+            <button type="button" class="login-btn float-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="width:200px;">Add Tournament</button>
         </div>
     </div>
 </div>
@@ -74,7 +74,7 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Create Tournament</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Add Tournament</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="" method="post">

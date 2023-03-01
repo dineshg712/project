@@ -25,7 +25,7 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
 <div class="row mt-3">
     <div class="flex-wrap">
         <div class="col-12">
-            <button type="button" class="login-btn float-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="width:200px;">Create Team</button>
+            <button type="button" class="login-btn float-end" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="width:200px;">Add Team</button>
         </div>
     </div>
 </div>
@@ -33,7 +33,7 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     <div class="flex-wrap">
         <div class="card">
             <div class="card-header">
-                <h2 align="center">Tournaments</h2>
+                <h2 align="center">Teams</h2>
             </div>
             <div class="card-body">
                 <?php
@@ -69,9 +69,6 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
                             </div>
                         </div>
                         <div class="card-footer mx-2">
-                            <form action="" id="myform">
-                                <input type="hidden" name="to_id" id="t_id" value="">
-                            </form>
                             <a href="" onclick="openModal('<?php echo $t_id; ?>');" data-bs-toggle="modal" id="openModal">View Teams</a>
                         </div>
                     </div>
@@ -97,7 +94,7 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Create Team</h5>
+                <h5 class="modal-title" id="staticBackdropLabel">Add Team</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <form action="" method="post">
