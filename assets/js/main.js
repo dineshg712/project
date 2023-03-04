@@ -5,7 +5,8 @@ if (preloader) {
   })
 }
 
-const redirect = pageurl => setTimeout(() => $('#load-content').load(pageurl + '.php') ,5)
+const redirect = pageurl =>
+  setTimeout(() => $('#load-content').load(pageurl + '.php'), 5)
 
 navBar = document.getElementById('nav-bar')
 document.onclick = function (clickEvent) {
@@ -25,8 +26,8 @@ for (var i = 0; i < navbaractive.length; i++) {
     if (current.length > 0) {
       current[0].className = current[0].className.replace('active', '')
     }
-    if(!navBar.classList.contains('nav-active')) {
-    this.classList.toggle('active');
+    if (!navBar.classList.contains('nav-active')) {
+      this.classList.toggle('active')
     }
   })
 }
@@ -45,12 +46,22 @@ function closeNav () {
   document.body.style.backgroundColor = '#d1d1d1'
 }
 
-const navDropdowns = document.querySelectorAll('.nav-bar .dropdown > a');
-  navDropdowns.forEach(el => {
-      el.addEventListener('click', function(event) {
-          if (document.querySelector('.nav-bar.nav-active')) {
-              event.preventDefault();
-              this.nextElementSibling.classList.toggle('dropdown-active');
-          }
-      })
-  });
+const navDropdowns = document.querySelectorAll('.nav-bar .dropdown > a')
+navDropdowns.forEach(el => {
+  el.addEventListener('click', function (event) {
+    if (document.querySelector('.nav-bar.nav-active')) {
+      event.preventDefault()
+      this.nextElementSibling.classList.toggle('dropdown-active')
+    }
+  })
+})
+
+const contentDropdowns = document.querySelectorAll('.dropdown-content > li')
+contentDropdowns.forEach(el => {
+  el.addEventListener('click', function (event) {
+    if (document.querySelector('.dropdown-content')) {
+      event.preventDefault()
+      this.nextElementSibling.classList.toggle('active')
+    }
+  })
+})

@@ -17,44 +17,22 @@
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/icons/icons.css">
-    <style>
-        .card {
-            background-color: #fff;
-            /* z-index: -1; */
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-            /* border-radius: 20px */
-        }
-        button {
-            height: 40px;
-        }
-        .table> :not(caption)>*>* {
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
-    <!-- <div id="preloader"></div> -->
     <?php
         include_once("header.php");
     ?>
     <div class="container">
-        <?php
-            // include('addtournament.php');
-            // include('addteam.php');
-            include('addplayer.php');
-        ?>
-        <div id="load-content"></div>
+    <?php
+        include_once("dashboard.php");
+    ?>
     </div>
     <?php
         include_once("footer.php");
     ?>
-    <!-- <script>
-        document.body.onload = function() {
-            $("#load-content").load('dashboard.php');
-        }
-    </script> -->
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

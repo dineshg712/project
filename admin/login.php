@@ -6,7 +6,7 @@ if (isset($_SESSION['username'])) {
     header("Location: index.php");
 }
 if (isset($_POST['submit'])) {
-    $uname = $_POST['uname'];
+    $uname = trim($_POST['uname']);
     $pass = md5($_POST['pass']);
     $sql = "SELECT * FROM `admin` WHERE BINARY `username`= BINARY '$uname' AND `password`= '$pass'";
     $result = mysqli_query($conn, $sql);
@@ -33,6 +33,10 @@ if (isset($_POST['submit'])) {
     <style>
         body {
             background-color: #111;
+        }
+        .card {
+            background-color: #212121;
+            box-shadow: none;
         }
     </style>
 </head>
