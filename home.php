@@ -1,20 +1,83 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque reiciendis odit dolore consequuntur aperiam. Dolore alias error mollitia nemo beatae minima pariatur omnis quos! Veniam aperiam porro ullam minus id.
-Reprehenderit at quod eaque est iure temporibus corrupti tempora, mollitia quae eveniet sequi consequatur delectus a ratione dolore pariatur accusantium provident! Voluptas, excepturi? Sapiente excepturi impedit, iure error quis itaque.
-Qui adipisci dolorem voluptatem incidunt? Blanditiis dolor laboriosam rem iste deserunt atque odit voluptates est praesentium! Suscipit soluta fugit amet cupiditate nulla, ea a ipsum minus delectus voluptas, non magni?
-Ipsam pariatur voluptas commodi, excepturi iste, iusto praesentium, neque culpa nemo minima cupiditate quaerat. Corporis odio rerum ipsum animi consectetur nostrum laudantium consequuntur modi fugiat. Cum ea repellendus totam dolorem?
-Voluptates vero natus hic illo, at, ullam mollitia modi obcaecati facilis error provident consequatur officiis perspiciatis dignissimos quidem! Unde, dolor eveniet voluptas illum eum nobis accusamus consectetur fuga placeat ut.
-Velit officiis magni voluptatum reiciendis? Commodi provident eum quos deserunt libero obcaecati velit non, quia cumque. Commodi aliquam mollitia tempora aspernatur sequi numquam veritatis qui inventore. Repellat omnis et veritatis.
-Rerum repudiandae cupiditate est vel necessitatibus praesentium, laudantium voluptate itaque ducimus autem iusto incidunt laboriosam fugiat quas harum voluptates recusandae vero suscipit magnam inventore optio culpa. Error, possimus. Voluptates, eligendi.
-Recusandae qui reiciendis repudiandae ipsa soluta amet doloribus, unde quia dolore repellat quos, odit voluptates tempore a in ratione illo deserunt error velit quo nisi assumenda esse. Repellat, nesciunt quod?
-Corrupti repellendus, similique sit consectetur ipsa consequuntur explicabo, tenetur maiores, voluptates nulla nemo quae doloribus dolores optio! Id iusto iste sint? Ab accusantium voluptatibus delectus deleniti corporis aperiam? Quas, eligendi!
-Asperiores, cumque est! Sit id omnis corporis porro accusamus sed tempore esse nostrum qui illum, quasi, repellendus aspernatur repellat unde dignissimos, numquam odit praesentium error cupiditate fuga odio veniam? Ullam!
-Inventore magni fugit similique odio aperiam quisquam suscipit, aliquam consequuntur nostrum magnam repellendus. Quam, quos. Numquam totam distinctio exercitationem expedita sed! Dignissimos beatae necessitatibus qui, rerum fugiat excepturi aspernatur eum!
-Consequatur est quod asperiores optio. Totam magni est, quas sed excepturi minima sit veniam officiis dignissimos nisi explicabo fugiat ea saepe, quaerat quisquam quidem facilis vel modi labore perspiciatis porro.
-Ex laborum fugiat dicta sequi perferendis unde quos, ad soluta aut vel. Vel eos laboriosam id, fuga consequatur magnam eaque adipisci, maxime placeat quam facilis impedit debitis saepe odit excepturi!
-Quibusdam unde cumque, in exercitationem ducimus quisquam sint quae soluta nemo omnis vitae tenetur molestiae veniam doloremque esse amet ipsam magni, consequuntur ratione. Ab totam excepturi iusto blanditiis alias ex?
-Eaque numquam, nulla cupiditate harum saepe aspernatur excepturi, esse perspiciatis praesentium sed hic rem ad nisi nostrum? Voluptas doloremque consectetur suscipit, eaque a doloribus reiciendis, aut, cumque ipsam hic nihil.
-A autem provident voluptatibus placeat. Veniam, consequatur perspiciatis dolores illo ipsa delectus provident reprehenderit deserunt, voluptatum cumque laboriosam. Tenetur fugiat ratione maxime voluptatum eligendi delectus perferendis minima ea aperiam saepe.
-Consequatur rerum voluptatibus autem, atque sint dicta eos corrupti, aliquam laboriosam eveniet animi temporibus suscipit et necessitatibus porro debitis sequi dolore, obcaecati neque numquam aperiam repudiandae repellat. Tempore, perferendis et!
-Praesentium libero sapiente cumque quibusdam porro dicta, eaque minus, harum quasi commodi rerum quo. Dolorem tempore nesciunt, veritatis architecto odit tempora corrupti. Illum unde nulla nisi veritatis minus veniam sed?
-Minus ipsam dolorum quod ratione repellat inventore, neque in accusantium dolore! Sed nemo nobis labore assumenda. Aliquam repellendus officia nisi accusantium ratione rem libero, aut, iure aliquid, dicta molestias praesentium.
-Sunt architecto dolore magnam veritatis autem, praesentium odit quis mollitia expedita, at minima. Nostrum, praesentium, aperiam sit hic, error ipsum recusandae tempore aliquid beatae perferendis quasi cum. Laudantium, ipsa error.
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Score - Live Cricket Score</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/icons/icons.css">
+</head>
+
+<body>
+    <?php
+    include_once("header.php");
+    ?>
+    <div class="container">
+    <div class="row">
+    <div class="col-md-4">
+        <div class="card p-3 my-3">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column ml-2"><span><h3>Total No. of Tournaments</h3></span></div>
+            </div>
+            <h2>5</h2>
+            <div class="d-flex justify-content-end mt-3"><span class="text-primary">View&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 my-3">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column ml-2"><span><h3>Total No. of Teams</h3></span></div>
+            </div>
+            <h2>6</h2>
+            <div class="d-flex justify-content-end mt-3"><span class="text-primary">View&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 my-3">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column ml-2"><span><h3>Total No. of Players</h3></span></div>
+            </div>
+            <h2>28</h2>
+            <div class="d-flex justify-content-end mt-3"><span class="text-primary">View&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 my-3">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column ml-2"><span><h3>Today Matches</h3></span></div>
+            </div>
+            <h2>5</h2>
+            <div class="d-flex justify-content-end mt-3"><span class="text-primary">View&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 my-3">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column ml-2"><span><h3>Recent Winnings</h3></span></div>
+            </div>
+            <h2>India</h2>
+            <div class="d-flex justify-content-end mt-3"><span class="text-primary">View&nbsp;</span></div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card p-3 my-3">
+            <div class="d-flex flex-row mb-3">
+                <div class="d-flex flex-column ml-2"><span><h3>Total Visitors</h3></span></div>
+            </div>
+            <h2>1865</h2>
+            <div class="d-flex justify-content-end mt-3"><span class="text-primary">&nbsp;</span></div>
+        </div>
+    </div>
+</div>
+    </div>
+    <?php
+    include_once("footer.php");
+    ?>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+</body>
+
+</html>

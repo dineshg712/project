@@ -1,20 +1,65 @@
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque reiciendis odit dolore consequuntur aperiam. Dolore alias error mollitia nemo beatae minima pariatur omnis quos! Veniam aperiam porro ullam minus id.
-Reprehenderit at quod eaque est iure temporibus corrupti tempora, mollitia quae eveniet sequi consequatur delectus a ratione dolore pariatur accusantium provident! Voluptas, excepturi? Sapiente excepturi impedit, iure error quis itaque.
-Qui adipisci dolorem voluptatem incidunt? Blanditiis dolor laboriosam rem iste deserunt atque odit voluptates est praesentium! Suscipit soluta fugit amet cupiditate nulla, ea a ipsum minus delectus voluptas, non magni?
-Ipsam pariatur voluptas commodi, excepturi iste, iusto praesentium, neque culpa nemo minima cupiditate quaerat. Corporis odio rerum ipsum animi consectetur nostrum laudantium consequuntur modi fugiat. Cum ea repellendus totam dolorem?
-Voluptates vero natus hic illo, at, ullam mollitia modi obcaecati facilis error provident consequatur officiis perspiciatis dignissimos quidem! Unde, dolor eveniet voluptas illum eum nobis accusamus consectetur fuga placeat ut.
-Velit officiis magni voluptatum reiciendis? Commodi provident eum quos deserunt libero obcaecati velit non, quia cumque. Commodi aliquam mollitia tempora aspernatur sequi numquam veritatis qui inventore. Repellat omnis et veritatis.
-Rerum repudiandae cupiditate est vel necessitatibus praesentium, laudantium voluptate itaque ducimus autem iusto incidunt laboriosam fugiat quas harum voluptates recusandae vero suscipit magnam inventore optio culpa. Error, possimus. Voluptates, eligendi.
-Recusandae qui reiciendis repudiandae ipsa soluta amet doloribus, unde quia dolore repellat quos, odit voluptates tempore a in ratione illo deserunt error velit quo nisi assumenda esse. Repellat, nesciunt quod?
-Corrupti repellendus, similique sit consectetur ipsa consequuntur explicabo, tenetur maiores, voluptates nulla nemo quae doloribus dolores optio! Id iusto iste sint? Ab accusantium voluptatibus delectus deleniti corporis aperiam? Quas, eligendi!
-Asperiores, cumque est! Sit id omnis corporis porro accusamus sed tempore esse nostrum qui illum, quasi, repellendus aspernatur repellat unde dignissimos, numquam odit praesentium error cupiditate fuga odio veniam? Ullam!
-Inventore magni fugit similique odio aperiam quisquam suscipit, aliquam consequuntur nostrum magnam repellendus. Quam, quos. Numquam totam distinctio exercitationem expedita sed! Dignissimos beatae necessitatibus qui, rerum fugiat excepturi aspernatur eum!
-Consequatur est quod asperiores optio. Totam magni est, quas sed excepturi minima sit veniam officiis dignissimos nisi explicabo fugiat ea saepe, quaerat quisquam quidem facilis vel modi labore perspiciatis porro.
-Ex laborum fugiat dicta sequi perferendis unde quos, ad soluta aut vel. Vel eos laboriosam id, fuga consequatur magnam eaque adipisci, maxime placeat quam facilis impedit debitis saepe odit excepturi!
-Quibusdam unde cumque, in exercitationem ducimus quisquam sint quae soluta nemo omnis vitae tenetur molestiae veniam doloremque esse amet ipsam magni, consequuntur ratione. Ab totam excepturi iusto blanditiis alias ex?
-Eaque numquam, nulla cupiditate harum saepe aspernatur excepturi, esse perspiciatis praesentium sed hic rem ad nisi nostrum? Voluptas doloremque consectetur suscipit, eaque a doloribus reiciendis, aut, cumque ipsam hic nihil.
-A autem provident voluptatibus placeat. Veniam, consequatur perspiciatis dolores illo ipsa delectus provident reprehenderit deserunt, voluptatum cumque laboriosam. Tenetur fugiat ratione maxime voluptatum eligendi delectus perferendis minima ea aperiam saepe.
-Consequatur rerum voluptatibus autem, atque sint dicta eos corrupti, aliquam laboriosam eveniet animi temporibus suscipit et necessitatibus porro debitis sequi dolore, obcaecati neque numquam aperiam repudiandae repellat. Tempore, perferendis et!
-Praesentium libero sapiente cumque quibusdam porro dicta, eaque minus, harum quasi commodi rerum quo. Dolorem tempore nesciunt, veritatis architecto odit tempora corrupti. Illum unde nulla nisi veritatis minus veniam sed?
-Minus ipsam dolorum quod ratione repellat inventore, neque in accusantium dolore! Sed nemo nobis labore assumenda. Aliquam repellendus officia nisi accusantium ratione rem libero, aut, iure aliquid, dicta molestias praesentium.
-Sunt architecto dolore magnam veritatis autem, praesentium odit quis mollitia expedita, at minima. Nostrum, praesentium, aperiam sit hic, error ipsum recusandae tempore aliquid beatae perferendis quasi cum. Laudantium, ipsa error.
+<?php
+include_once('admin/config.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Score - Live Cricket Score</title>
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/icons/icons.css">
+    <script src="assets/js/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <?php
+    include_once("header.php");
+    ?>
+    <div class="container-fluid">
+        <div class="row mt-3">
+            <div class="flex-wrap">
+                <div class="col-12">
+                    <h2 class="text-center">Cricket News</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <?php
+            $sql = "SELECT * from news ORDER BY `time` DESC";
+            $res = mysqli_query($conn, $sql);
+            while ($row = mysqli_fetch_assoc($res)) {
+                $ne_id = $row['news_id'];
+                $ne_image = $row['image'];
+            ?>
+                <section class="mx-auto my-3" style="max-width: 19rem;">
+                    <div class="card" style="min-height: 80vh;max-height: 80vh;overflow:hidden">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="<?php echo "assets/images/$ne_id/$ne_image" ?>" style="aspect-ratio: 3/2;object-fit:cover" class="img-fluid" />
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold"><a><?php echo stripslashes($row['heading']); ?></a></h5>
+                            <p class="card-text">
+                                <?php echo stripslashes($row['content']); ?>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            <?php } ?>
+        </div>
+    </div>
+    <?php
+    include_once("footer.php");
+    ?>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

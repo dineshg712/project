@@ -5,8 +5,8 @@ if (preloader) {
   })
 }
 
-const redirect = pageurl =>
-  setTimeout(() => $('#load-content').load(pageurl + '.php'), 5)
+// const redirect = pageurl =>
+//   setTimeout(() => $('#load-content').load(pageurl + '.php'), 5)
 
 navBar = document.getElementById('nav-bar')
 document.onclick = function (clickEvent) {
@@ -14,7 +14,7 @@ document.onclick = function (clickEvent) {
   //if (!document.getElementById('nav-bar').contains(clickover) && clickover.id != "hamburger") {
   if (clickover.id != 'hamburger' && clickover.id != 'dropdown-link') {
     navBar.classList.remove('nav-active')
-    document.body.style.backgroundColor = '#d1d1d1'
+    document.body.style.backgroundColor = '#f1f1f1'
   }
 }
 
@@ -43,7 +43,7 @@ hamburger.onclick = function () {
 
 function closeNav () {
   navBar.classList.remove('nav-active')
-  document.body.style.backgroundColor = '#d1d1d1'
+  document.body.style.backgroundColor = '#f1f1f1'
 }
 
 const navDropdowns = document.querySelectorAll('.nav-bar .dropdown > a')
@@ -58,6 +58,16 @@ navDropdowns.forEach(el => {
 
 const contentDropdowns = document.querySelectorAll('.dropdown-content > li')
 contentDropdowns.forEach(el => {
+  el.addEventListener('click', function (event) {
+    if (document.querySelector('.dropdown-content')) {
+      event.preventDefault()
+      this.nextElementSibling.classList.toggle('active')
+    }
+  })
+})
+
+const contentDropdownDropdowns = document.querySelectorAll('.content-dropdown > li')
+contentDropdownDropdowns.forEach(el => {
   el.addEventListener('click', function (event) {
     if (document.querySelector('.dropdown-content')) {
       event.preventDefault()

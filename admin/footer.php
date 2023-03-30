@@ -6,7 +6,7 @@
                 <a href="index.php" class="logo d-flex align-items-center">
                     <span>Go Score</span>
                 </a>
-                <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+                <p>Cricket Score App is about showing lives scores of the cricket match online. Thus user can view cricket scores in real time.</p>
                 <div class="social-links d-flex mt-4 mb-4">
                     <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                     <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -38,9 +38,10 @@
             <div class="col-lg-3 col-md-12 footer-contact text-center">
                 <h4>Contact Us</h4>
                 <p>
-                    A108 Adam Street <br>
-                    New York, NY 535022<br>
-                    United States <br><br>
+                    A108 East Street <br>
+                    Virudhunagar, 626001<br>
+                    Tamilnadu<br>
+                    India <br><br>
                     <strong>Phone:</strong> +1 5589 55488 55<br>
                     <strong>Email:</strong> info@example.com<br>
                 </p>
@@ -54,8 +55,8 @@
         <div class="copyright">
             &copy; Copyright <strong><span>Go Score</span></strong>. All Rights Reserved
         </div>
-        <div class="credits">
+        <!-- <div class="credits">
             Designed by <a href="#">BootstrapMade</a>
-        </div>
+        </div> -->
     </div>
 </footer>

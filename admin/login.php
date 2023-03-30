@@ -12,6 +12,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($conn, $sql);
     if ($result->num_rows > 0) {
         $row = mysqli_fetch_assoc($result);
+        $_SESSION['id'] = $row['id'];
         $_SESSION['username'] = $row['username'];
         header("Location: index.php");
     } else {
@@ -34,9 +35,18 @@ if (isset($_POST['submit'])) {
         body {
             background-color: #111;
         }
+
         .card {
             background-color: #212121;
             box-shadow: none;
+        }
+
+        .input:focus~label,
+        input:valid~label {
+            transform: translateY(-50%) scale(0.8);
+            background-color: #212121;
+            padding: 0 .2em;
+            color: #fefefe;
         }
     </style>
 </head>

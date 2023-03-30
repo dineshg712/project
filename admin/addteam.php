@@ -22,8 +22,12 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     $team_id = "TE" . $value2;
     $tour_id = $_POST['sel_tour'];
     $te_name = $_POST['te_name'];
-    $sql = "INSERT INTO team(`tournament_id`,`team_id`,`team_name`) VALUES ('$tour_id','$team_id','$te_name') ";
+    $sh_name = $_POST['sh_name'];
+    $sql = "INSERT INTO team(`tournament_id`,`team_id`,`team_name`,`short_name`) VALUES ('$tour_id','$team_id','$te_name','$sh_name') ";
     $res = mysqli_query($conn, $sql);
+    if($res) {
+        echo "<script>window.location.href=location.href;</script>";
+    }
 }
 ?>
 
@@ -34,10 +38,11 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Score</title>
+    <title>Go Score - Live Cricket Score</title>
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/icons/icons.css">
+    <script src="../assets/js/sweetalert.min.js"></script>
 </head>
 
 <body>
@@ -148,6 +153,12 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
                                 <div class="form-group">
                                     <label for="te_name" class="form-label">Team Name :</label>
                                     <input type="text" class="form-control" id="te_name" name="te_name" placeholder="Enter Team Name" required>
+                                </div>
+                            </div>
+                            <div class="row mx-3">
+                                <div class="form-group">
+                                    <label for="sh_name" class="form-label">Short Name :</label>
+                                    <input type="text" class="form-control" id="sh_name" name="sh_name" placeholder="Eg:CSK,IND..." required>
                                 </div>
                             </div>
                         </div>

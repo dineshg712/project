@@ -25,6 +25,9 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     $role = $_POST['sel_role'];
     $sql = "INSERT INTO player(`team_id`,`player_id`,`player_name`,`role`) VALUES ('$team_id','$player_id','$player_name','$role') ";
     $res = mysqli_query($conn, $sql);
+    if($res) {
+        echo "<script>window.location.href=location.href;</script>";
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -34,10 +37,11 @@ if (isset($_POST['submit']) && $_POST['randcheck'] == $_SESSION['rand']) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Live Score</title>
+    <title>Go Score - Live Cricket Score</title>
     <link rel="stylesheet" href="../assets/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/icons/icons.css">
+    <script src="../assets/js/sweetalert.min.js"></script>
 </head>
 
 <body>
