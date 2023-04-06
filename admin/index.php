@@ -25,7 +25,7 @@ if (!isset($_SESSION['username'])) {
     <?php
     include_once("header.php");
     ?>
-    <div class="container">
+    <div class="container-fluid">
         <?php
         include_once("dashboard.php");
         ?>
