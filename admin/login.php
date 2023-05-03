@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
                         <form action="" method="POST">
                             <h2 class="mb-4">Login</h2>
                             <div class="input-group">
-                                <input type="text" class="input" name="uname" value="<?php echo $uname; ?>" autocomplete="off" required>
+                                <input type="text" class="input" name="uname" value="<?php echo $uname; ?>" autocomplete="nope" required>
                                 <label class="user-label">Username</label>
                             </div>
                             <div class="input-group">
@@ -75,6 +75,11 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            alert('Username : admin\nPassword : admin')
+        })
+    </script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
                     </ul>
                 </li>
                 <li><a href="fixtures.php">Fixtures</a></li>
-                <li><a href="#">Result</a></li>
+                <li><a href="result.php">Result</a></li>
                 <li><a href="news.php">News</a></li>
                 <li class="dropdown"><a href="#" id="dropdown-link"><span><?php echo $_SESSION['username']; ?></span><i id="dropdown-link" class="bi bi-chevron-down dropdown-indicator"></i></a>
                     <ul>
